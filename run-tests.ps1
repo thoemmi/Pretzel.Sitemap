@@ -57,7 +57,7 @@ try {
 
     $sitemap = [xml](Get-Content "_site\sitemap.xml")
 
-    Assert "http://example.org/2015/11/22/myfirstpost.html" $sitemap.urlset.url[0].loc
+    Assert "http://example.org/$(Get-Date -Format 'yyyy\/MM\/dd')/myfirstpost.html" $sitemap.urlset.url[0].loc
     Assert 0.8 $sitemap.urlset.url[0].priority
     Assert "http://example.org/about.html" $sitemap.urlset.url[1].loc
     Assert 0.7 $sitemap.urlset.url[1].priority
