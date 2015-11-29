@@ -1,7 +1,7 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-$sourceFolder = Join-Path $PSScriptRoot "src"
+$sourceFolder = $PSScriptRoot
 $testSiteFolder = Join-Path $PSScriptRoot "testsite"
 $pluginsFolder = Join-Path $testSiteFolder "_plugins"
 $pretzelExe = Join-Path $PSScriptRoot "libs\Pretzel\Pretzel.exe"

@@ -13,4 +13,4 @@ for each post and page it adds an `url` entry to the sitemap. Additionally it ch
 
 ### Installation
 
-Compile the solution `Pretzel.Sitemap.sln` and copy `Pretzel.Sitemap.dll` to the `_plugin` folder at the root of your site folder.
+Copy `Pretzel.Sitemap.csx` to the `_plugin` folder at the root of your site folder.
